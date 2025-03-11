@@ -4,4 +4,4 @@
 4. Building a Neural Network Model
 5. Optimizing the model
 6. Training the model
-7. Predicting the number of crimes that will occur in the future
+7. Predicting the number of crimes that will occur in the future.
