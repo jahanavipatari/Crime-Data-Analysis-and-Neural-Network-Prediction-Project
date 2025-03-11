@@ -1,0 +1,61 @@
+Crime Data Analysis and Forecasting Using Neural Networks
+
+Introduction
+This project aims to analyze crime patterns and predict future crime occurrences using historical crime data from 2018 to 2024. 
+The dataset, sourced from the City’s official data platform, provides monthly records of reported crimes across various neighborhoods. 
+By exploring trends within this data, a neural network model is developed and optimized to generate crime forecasts.
+
+Approach
+The project follows a structured methodology:
+
+Data Acquisition and Inspection: Importing the dataset and reviewing its structure to understand the variables and content.
+Preprocessing: Cleaning the data by handling missing values, ensuring consistency, and transforming variables where necessary.
+Exploratory Data Analysis (EDA): Identifying key trends, seasonal variations, and community-specific crime patterns.
+Model Development: Implementing a Long Short-Term Memory (LSTM) neural network for time-series prediction.
+Optimization and Training: Fine-tuning hyperparameters to improve accuracy and generalization.
+Crime Forecasting: Utilizing the trained model to predict future crime occurrences.
+Findings from Data Exploration
+The analysis uncovered several significant crime patterns:
+
+Crime Distribution by Community:
+
+Certain communities exhibited higher crime rates, with Beltline, Forest Lawn, and Downtown Commercial Core being the most affected.
+Some areas had significantly lower crime rates, including community 13M, which accounted for a large share of the least reported crimes.
+Crime Categories:
+
+The most frequently reported crimes were Theft from Vehicle, Theft of Vehicle, and Commercial Break and Enter.
+Crime types varied across neighborhoods, with some areas showing specific crime hotspots.
+Trends Over Time:
+
+The highest number of crimes was reported in 2019, followed by 2022 and 2018.
+The dataset for 2024 was incomplete, containing data for only a few months.
+Seasonal trends indicated fluctuations in crime rates across different months.
+Community and Crime Type Correlation:
+
+Certain communities were linked to specific crime types, such as a high incidence of break-ins in Forest Lawn.
+Yearly Trends Across Categories:
+
+Shifts in crime categories over the years highlighted evolving patterns in criminal activities.
+Neural Network Model for Crime Prediction
+To forecast future crime occurrences, an LSTM-based neural network was designed and trained. LSTM models are well-suited for time-series forecasting due to their ability to capture long-term dependencies.
+
+Model Development and Training Process:
+
+Data Preparation: Converting the dataset into sequences suitable for time-series modeling.
+Train-Test Split: Splitting data into training, validation, and test sets for performance evaluation.
+Model Architecture:
+LSTM layer with 50 units to capture sequential dependencies.
+Dropout layer to prevent overfitting.
+Dense output layer for final predictions.
+Compilation and Optimization:
+Adam optimizer used for efficient learning.
+Mean Squared Error (MSE) employed as the loss function.
+Training: Model trained for 100 epochs with validation to monitor performance.
+Performance and Insights
+The model demonstrated a steady decrease in loss, indicating improved accuracy in crime predictions.
+Validation loss suggested reliable generalization to unseen data.
+The forecasting capability of the model provides valuable insights for law enforcement and policymakers to allocate resources effectively.
+Conclusion
+This project successfully combined data analysis and machine learning to study crime trends and forecast future incidents.
+By leveraging an LSTM-based predictive model, crime occurrences can be anticipated, allowing for proactive safety measures and better resource planning. 
+The findings provide valuable insights that can support data-driven decision-making in public safety and crime prevention
